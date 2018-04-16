@@ -1,6 +1,6 @@
 # useracc
-a python module
-
+> a python module
+> Manage User accounts (so only certain people can use your code!)
 # Example
 ```python
 import useracc
