@@ -21,7 +21,7 @@ except:
 ```
 
 # One User Example
-```
+```python
 # Imports
 import useracc
 from useracc import user
