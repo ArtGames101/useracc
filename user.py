@@ -38,3 +38,29 @@ def passreg(text="Enter Password"):
         us.write("username = '{}'".format(choice))
         print("Saved Data!")
         us.close()
+
+def ousername(text="Setup one user"):
+    clear_screen()
+    print(text)
+    choice = user_choice()
+    try:
+        os.makedirs("data")
+    except:
+        pass
+    use = open("data/ouser.py", "w+")
+    use.write("username = '{}'".format(choice))
+    print("Data Saved!")
+    use.close()
+
+def ouserpass(text="Setup one user pass"):
+    clear_screen()
+    print(text)
+    choice = user_choice()
+    try:
+        os.makedirs("data")
+    except:
+        pass
+    use = open("data/opass.py", "w+")
+    use.write("password = '{}'".format(choice))
+    print("Data Saved!")
+    use.close()
