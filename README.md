@@ -2,7 +2,7 @@
 > a python module
 
 > Manage User accounts (so only certain people can use your code!)
-# Example
+# Multi-User Example
 ```python
 import useracc
 from useracc import user
@@ -18,3 +18,26 @@ if choice == user.username:
     else("YAY")
 except:
     input("Wrong Password!")
+```
+
+# One User Example
+```
+# Imports
+import useracc
+from useracc import user
+
+# Register Username
+user.ousername()
+# Register Password
+user.ouserpass()
+
+def user_choice():
+    return input("\n>>> ").lower().strip()
+
+choice = user_choice()
+from data import ouser
+if choice == ouser.username:
+    print("YAY")
+else:
+    print("Nope.")
+```
